@@ -1,0 +1,14 @@
+Trial run notes for DPLL SAT Solver
+
+Example command:
+  ./dpll-sat "(a OR b) AND (NOT a OR c) AND (NOT b)"
+
+Expected result:
+  Satisfiable.
+  One possible assignment includes:
+    b = False
+    a = True
+    c = True
+
+Built-in tests:
+  ./dpll-sat --test
